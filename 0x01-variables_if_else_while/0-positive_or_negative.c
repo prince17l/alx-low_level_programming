@@ -2,10 +2,13 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
-/* betty style doc for function main goes there */
-/* This is the main function */ 
+/**
+ *  main - this is a main function.
+ *  description - it will print what type of number is n.
+ *  Return: integer
+ */
 int main(void)
-
+{
 	int n;
 
 	srand(time(0));
