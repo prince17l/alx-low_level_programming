@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E -S -C $CFILE
+gcc -E -S -C $CFILE && cat $CFILE > $CFILE.o
