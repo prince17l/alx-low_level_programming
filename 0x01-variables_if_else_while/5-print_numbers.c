@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 *  main - this is a main function.
-*  description - it will print 0-9.
+*  description - it will print single digit numbers.
 *  Return: integer
 */
 int main(void)
