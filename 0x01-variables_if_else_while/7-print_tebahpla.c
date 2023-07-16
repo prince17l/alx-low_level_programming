@@ -8,9 +8,9 @@ int main(void)
 {
 	int number = 0;
 
-	while (number < 10)
+	while (number < 26)
 	{
-		putchar('9' - number);
+		putchar('z' - number);
 		number++;
 	}
 	putchar('\n');
