@@ -4,6 +4,10 @@
 *  description - it is a header file with many functions.
 *  Return: integer
 */
+int main(void)
+{
+	return (0);
+}
 void put(void)
 {
 	putchar('_');
@@ -40,8 +44,4 @@ void print_alphabet_x10(void)
 		}
 		putchar('\n');
 	}
-}
-int main(void)
-{
-	return (0);
 }
