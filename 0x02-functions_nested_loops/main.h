@@ -4,7 +4,7 @@
 *  description - it is a header file with many functions.
 *  Return: integer
 */
-int put(void)
+void put(void)
 {
 	putchar('_');
 	putchar('p');
@@ -15,7 +15,6 @@ int put(void)
 	putchar('a');
 	putchar('r');
 	putchar('\n');
-	return (0);
 }
 void print_alphabet(void)
 {
@@ -41,4 +40,8 @@ void print_alphabet_x10(void)
 		}
 		putchar('\n');
 	}
+}
+int main(void)
+{
+	return (0);
 }
