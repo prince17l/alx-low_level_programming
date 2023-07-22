@@ -4,10 +4,6 @@
 *  description - it is a header file with many functions.
 *  Return: integer
 */
-int main(void)
-{
-	return (0);
-}
 void put(void)
 {
 	putchar('_');
