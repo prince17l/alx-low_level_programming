@@ -4,8 +4,14 @@
 *  description - it will print a-z.
 *  Return: integer
 */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char letter = 'a';
+
+	while (letter != 'z' + 1)
+	{
+		putchar(letter);
+		letter++;
+	}
+	putchar('\n');
 }
