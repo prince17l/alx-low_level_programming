@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-*  main - this is a main function.
+*  print_alphabet - this is a main function.
 *  description - it will print a-z.
-*  Return: integer
+*  Return: void
 */
 void print_alphabet(void)
 {
