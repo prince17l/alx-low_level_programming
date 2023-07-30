@@ -2,6 +2,7 @@
 /**
 *  _islower - this is a main function.
 *  description - it will check small letters.
+*  @c: is a variable type char.
 *  Return: int
 */
 int _islower(int c)
