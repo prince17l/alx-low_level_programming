@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- *  *_strpbrk - this is a _strpbrk function.
+ *  print_chessboard - this is a print_chessboard function.
  *  description - it will locat memory area.
- *  @s: is a pointer to char
- *  @accept: is a pointer to char
+ *  @a: is a pointer to char
  *  Return: char
  */
 void print_chessboard(char (*a)[8])
