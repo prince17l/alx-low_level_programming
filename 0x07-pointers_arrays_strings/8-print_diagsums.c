@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *  print_diagsums - this is a print_diagsums function.
  *  description - it will locat memory area.
