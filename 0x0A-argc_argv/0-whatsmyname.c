@@ -1,6 +1,5 @@
-#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
+#include "main"
 /**
  * main - it is a main function
  * @argc: argument count
