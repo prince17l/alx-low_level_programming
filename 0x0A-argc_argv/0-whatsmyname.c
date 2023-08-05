@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main"
 /**
  * main - it is a main function
  * @argc: argument count
