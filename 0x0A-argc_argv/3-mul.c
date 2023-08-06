@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  * main - it is a main function
@@ -8,9 +9,13 @@
  */
 int main(int argc, char *argv[])
 {
+	int numb1 = atoi(argv[1]);
+	int numb2 = atoi(argv[2]);
+	int multipl;
+
 	if (argc == 3)
 	{
-		int multipl = *argv;
+		multipl = numb1 * numb2;
 		printf("%d\n", multipl);
 	}
 	else
@@ -18,5 +23,5 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
+	return (0);
 }
