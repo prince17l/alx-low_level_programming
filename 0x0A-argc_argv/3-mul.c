@@ -18,6 +18,10 @@ int main(int argc, char *argv[])
 		multipl = numb1 * numb2;
 		printf("%d\n", multipl);
 	}
+	else if (argc == 1)
+	{
+		printf("0\n");
+	}
 	else
 	{
 		printf("Error\n");
