@@ -10,7 +10,8 @@ int main(int argc, char *argv[])
 {
 	if (argc == 3)
 	{
-		int multipl = (argv[1] - 48) * (argv[2] - 48);
+		int multipl = *argv;
+		printf("%d\n", multipl);
 	}
 	else
 	{
