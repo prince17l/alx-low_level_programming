@@ -1,13 +1,23 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 /**
- * main - it is a main function
- * @argc: argument count
- * @argv: argument vector
- * Return: int
+ * _strdup - it is a main function
+ * @str: char array
+ * Return: char
  */
 char *_strdup(char *str)
 {
-	str = malloc(sizeof(str));
+	char *newstr;
+	int i;
 
+	newstr = malloc(sizeof(str));
+	if (str == NULL || sizeof(newstr) != sizeof(str))
+	{
+		return (NULL);
+	}
+	for (i = 0; str[i] <= '\0'; i++)
+	{
+		newstr[i] = str[i];
+	}
+	return (newstr);
 }
