@@ -7,21 +7,22 @@
  */
 char *_strdup(char *str)
 {
-	char *newstr;
-	int i;
+	char *array;
+	int i, k = 0;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
-	newstr = malloc(sizeof(str) + 5);
-	for (i = 0; i < str[i] < ('\0' + 1); i++)
-	{
-		newstr[i] = str[i];
-	}
-	if (newstr == NULL || str == NULL)
-	{
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+
+	array = malloc(sizeof(char) * (i + 1));
+
+	if (array == NULL)
 		return (NULL);
-	}
-	return (newstr);
+
+	for (k = 0; str[k]; k++)
+		array[k] = str[k];
+
+	return (array);
 }
