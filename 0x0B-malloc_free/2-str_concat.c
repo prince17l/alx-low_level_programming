@@ -18,20 +18,18 @@ char *str_concat(char *s1, char *s2)
 		size_2++;
 	size = size_1 + size_2 + 1;
 	newstr = malloc(size - 1);
-	for (i = 0; i < size; i++)
+
+	while (s1[i] != '\0')
 	{
-		if (i == size_1)
-		{
-			newstr[i] = ' ';
-		}
-		else if (i < size_1)
-		{
-			newstr[i] = s1[i];
-		}
-		else
-		{
-			newstr[i] = s2[i];
-		}
+		newstr[i] = s1[i];
+		i++;
+	}
+	i = 0;
+	while (s2[i] != '\0')
+	{
+		newstr[size_1] = s2[i];
+		i++;
+		size_1++;
 	}
 	if (newstr == NULL)
 	{
