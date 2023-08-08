@@ -27,7 +27,7 @@ char *argstostr(int ac, char **av)
 	i = 1;
 	for (j = 1; j < ac; j++)
 	{
-		for (; av[i] <= '\0'; i++)
+		for (; av[j][i] != '\0'; i++)
 		{
 			newstr[k] = av[j][i];
 			k++;
