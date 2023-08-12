@@ -10,43 +10,52 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *newstr;
-	int i, j;
-	int size1 = 0;
-	int len2 = 0;
-	int sum;
-
+	int siz1 = 0, siz2 = 0, i, j;
+	int k = 0;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (i = 0; s1[i] <= '\0'; i++)
+
+	while (s1[siz1] != '\0')
+		siz1++;
+	while (s2[siz2] != '\0')
+		siz2++;
+
+	if (n >= siz2)
 	{
-		size1++;
-	}
-	while (s2[j] != '\0')
-		len2++;
-	if (n >= len2)
-	{
-		newstr = malloc(size1 + len2  + 1);
+		newstr = malloc(siz1 + siz2 + 1);
 	}
 	else
 	{
-		newstr = malloc(size1 + n + 1);
-		len2 = n;
+		newstr = malloc(siz1 + n + 1);
 	}
+
 	if (newstr == NULL)
 		return (NULL);
-	sum = size1 + len2;
-	for (i = 0; i < size1; i++)
+
+	for (i = 0; i <= siz1; i++)
 	{
 		newstr[i] = s1[i];
+		j++;
 	}
-	i = 0;
-	for (j = size1; j < sum; j++)
+	if(n >= siz2)
 	{
-		newstr[j] = s2[i];
-		i++;
+		for (; j < n; j++)
+		{
+			newstr[j] = s2[k];
+			k++;
+		}
 	}
-	newstr[sum] = '\0';
+	else
+	{
+		while (s2[k] != '\0')
+		{
+			newstr[j] = s2[k];
+			k++;
+			j++;
+		}
+	}
+	newstr[j] = '\0';
 	return (newstr);
 }
