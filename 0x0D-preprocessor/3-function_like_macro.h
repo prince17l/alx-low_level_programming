@@ -1,4 +1,4 @@
-#ifndef ABD_H
-#define ABD_H
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 #define ABD(x) ((x) < 0 ? -(x) : (x))
 #endif
