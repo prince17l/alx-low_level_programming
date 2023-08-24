@@ -15,7 +15,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	unsigned int count;
 
 	new = malloc(sizeof(list_t));
-	if (new == NULL)
+	if (!new)
 		return (NULL);
 	while (str[count])
 		count++;
