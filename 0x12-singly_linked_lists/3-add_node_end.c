@@ -14,7 +14,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *last = *head;
 	unsigned int count;
 
-	new = malloc(sizeof(struct list_s));
+	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
 	while (str[count])
@@ -27,7 +27,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = new;
 		return (new);
 	}
-	while (last != NULL)
+	while (last->next)
 		last = last->next;
 	last->next = new;
 	return (new);
