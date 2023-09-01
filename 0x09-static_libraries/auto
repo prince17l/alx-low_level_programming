@@ -1,0 +1,8 @@
+#!/bin/bash
+for i in {1..20}
+do
+	Name=$(sed -n "${i}p" filename)
+	touch "${Name}.c"
+	echo -e "#include \"main.h\"\n" >> "${Name}.c"
+	echo -e "/**\n *f - This is the main function\n*@n: This is argument\n*Return: int\n*/\n" >> "${Name}.c"
+done
