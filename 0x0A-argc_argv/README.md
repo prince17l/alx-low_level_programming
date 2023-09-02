@@ -1,1 +1,1 @@
-This project is about argv and argc
+0-whatsname - will print the name of the program
