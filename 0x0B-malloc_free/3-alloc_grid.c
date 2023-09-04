@@ -25,6 +25,7 @@ int **alloc_grid(int width, int height)
 			{
 				free(twodarray[i]);
 			}
+			free(twodarray);
 			return (NULL);
 		}
 	}
