@@ -30,8 +30,11 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			change += money / coins[i];
-			money = money % coins[i];
+			while (money % coins[i] != money)
+			{
+				change += money / coins[i];
+				money = money % coins[i];
+			}
 		}
 	}
 	printf("%d\n", change);
