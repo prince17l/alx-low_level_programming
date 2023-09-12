@@ -22,7 +22,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	mydog->name[i] = '\0';
 	while (owner[j] != '\0')
-	{	
+	{
 		mydog->owner[j] = owner[j];
 		j++;
 	}
